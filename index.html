@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <h1>Sobre</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section id="servicos">
+            <h1>Serviços</h1>
+            <ul>
+                <li>Desenvolvimento Web</li>
+                <li>Design Gráfico</li>
+                <li>Marketing Digital</li>
+            </ul>
+        </section>
+        <section id="portfolio">
+            <h1>Portfólio</h1>
+            <div class="portfolio-container">
+                <img src="img/projeto1.jpg" alt="Projeto 1">
+                <img src="img/projeto2.jpg" alt="Projeto 2">
+                <img src="img/projeto3.jpg" alt="Projeto 3">
+            </div>
+        </section>
+        <section id="contato">
+            <h1>Contato</h1>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+                <button>Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Cortex</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+_script.js_
+```
+// Função para validar formulário de contato
+function validarFormulario() {
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    
+    if (nome === '' || email === '') {
+        alert('Por favor, preencha todos os campos.');
+        return false;
+    }
+    
+    return true;
+}
+
+// Adicionar evento de clique ao botão de enviar
+document.querySelector('button').addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    if (validarFormulario()) {
+        // Enviar formulário
+        alert('Formulário enviado com sucesso!');
+    }
+});
+```
+
+Esse script.js valida o formulário de contato e exibe uma mensagem de sucesso quando enviado.
+
+Deseja que eu explique algum trecho do código?
